@@ -8,9 +8,9 @@ Phalanx is an ambitious project aimed at building a lightweight compiler in Pyth
 - **Variable Assignments**: Allows for the assignment of values to variables, enhancing the capability to perform complex calculations and maintain state.
 - **Conditional Statements**: Interprets basic conditional structures (`if`, `else`, `elif`), enabling decision-making within the code.
 - **Tokenization**: Implements a robust tokenization process to accurately parse code into identifiable tokens.
+- **Symbol Table Management**: Manages a symbol table to keep track of variable names and their values throughout the execution.
+- **Logical Operations**: Supports logical operators (`and`, `or`) for more complex conditional statements.
+- **Function Definitions and Calls**: Enables defining and calling functions, adding modularity and reuse to the code.
 - **Extensible**: Designed to be easily extendable, allowing for further development and addition of new features.
 
-## Getting Started
-
-To get started with Phalanx, clone this repository to your local machine:
 
