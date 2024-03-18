@@ -1,5 +1,3 @@
-import tkinter as tk
-from tkinter import scrolledtext
 def tokenize(expression):
     tokens = [] 
     current = ''
@@ -67,40 +65,10 @@ def read_and_tokenize(file_path):
     return tokens
 
 
-file_path = 'testing.txt'
+file_path = 'test.py'
 
 
 tokens = read_and_tokenize(file_path)
-
-def display_tokens_gui(file_path):
-  
-    tokens = read_and_tokenize(file_path)
-    
-   
-    root = tk.Tk()
-    root.title("Tokenized Output")
-
-   
-    root.geometry('400x300')  # Width x Height
-
-    
-    scroll_txt = scrolledtext.ScrolledText(root, wrap=tk.WORD, width=40, height=16)
-    scroll_txt.pack(pady=10, padx=10)
-
-
-    for token in tokens:
-        scroll_txt.insert(tk.END, str(token) + '\n')
-
-   
-    scroll_txt.config(state=tk.DISABLED)
-
-
-    ok_button = tk.Button(root, text="OK", command=root.destroy)
-    ok_button.pack(pady=5)
-
-    root.mainloop()
-
-
-file_path = 'testing.txt'
-display_tokens_gui(file_path)
+for token in tokens:
+    print(token)
 
