@@ -1,0 +1,7 @@
+while a < 0:
+print("hello world")
+a = b + c 
+if a : 
+print(b)
+while true :
+print(x)
