@@ -73,28 +73,28 @@ file_path = 'testing.txt'
 tokens = read_and_tokenize(file_path)
 
 def display_tokens_gui(file_path):
-    # Generate tokens
+  
     tokens = read_and_tokenize(file_path)
     
-    # Create the main window
+   
     root = tk.Tk()
     root.title("Tokenized Output")
 
-    # Set the dimensions of the window
+   
     root.geometry('400x300')  # Width x Height
 
-    # Create a scrolled text widget for displaying the tokens
+    
     scroll_txt = scrolledtext.ScrolledText(root, wrap=tk.WORD, width=40, height=16)
     scroll_txt.pack(pady=10, padx=10)
 
-    # Insert tokens into the scrolled text widget
+
     for token in tokens:
         scroll_txt.insert(tk.END, str(token) + '\n')
 
-    # Make the scrolled text widget read-only
+   
     scroll_txt.config(state=tk.DISABLED)
 
-    # OK button to close the GUI
+
     ok_button = tk.Button(root, text="OK", command=root.destroy)
     ok_button.pack(pady=5)
 
