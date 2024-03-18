@@ -98,10 +98,9 @@ def display_tokens_gui(file_path):
     ok_button = tk.Button(root, text="OK", command=root.destroy)
     ok_button.pack(pady=5)
 
-    # Start the GUI event loop
     root.mainloop()
 
-# Replace 'testing.txt' with the path to your file
+
 file_path = 'testing.txt'
 display_tokens_gui(file_path)
 
